@@ -6,16 +6,16 @@
         <!--Alternative styling method-->
         <style>
             #green{
-                background-color: black;
+                background-color: darkolivegreen;
             }
             #red{
-                background-color: black;
+                background-color: palevioletred;
             }
             #blue{
-                background-color: black;
+                background-color: cornflowerblue;
             }
             #random{
-                background-color: teal;
+                background-color: ivory;
             }
 
             button{
@@ -29,10 +29,11 @@
     </head>
     <body> <!--Content that lives on the page-->
         <h1>Color Flipper</h1>
-        <button id="green" style="background-color: green">Green</button>
-        <button id="red" style="background-color: red">Red</button>
-        <button id="blue" style="background-color: blue">Blue</button>
-        <button id="random" style="background-color: ivory">Random</button>
+        <!-- registering an event called on-click-->
+        <button id="green" onclick="setColor('green')">Green</button>
+        <button id="red" onclick="setColor('red')">Red</button>
+        <button id="blue" onclick="setColor('blue')">Blue</button>
+        <button id="random" onclick="randomColor()">Random</button>
 
     <!--linked the files together-->
     <script src="index.js"> </script>
